@@ -286,7 +286,7 @@ var map=L.map('map',{zoomControl:false,maxZoom:18,minZoom:9})
 L.control.zoom({position:'topright'}).addTo(map);
 
 var bms={
- dark:L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',{attribution:'© CartoDB',maxZoom:19,crossOrigin:'anonymous'}),
+ dark:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Dark_Gray_Base/MapServer/tile/{z}/{y}/{x}',{attribution:'Esri, HERE, Garmin, © OpenStreetMap',maxZoom:18,maxNativeZoom:16,crossOrigin:'anonymous'}),
  osm:L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:19,crossOrigin:'anonymous'}),
  sat:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'Esri, Maxar, Earthstar Geographics',maxZoom:19,crossOrigin:'anonymous'})};
 bms.dark.addTo(map);
